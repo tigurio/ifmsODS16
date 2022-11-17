@@ -1,0 +1,13 @@
+:: Scriptable objects
+https://www.youtube.com/watch?v=qUsYSNrsr8s
+:: Criando card
+https://www.youtube.com/watch?v=mhwGQ9XRBD8
+<<<<<<< HEAD
+:: Criando Menu
+https://www.youtube.com/watch?v=wLmhE1vD8Cs
+=======
+:: Raondom Card
+https://blog.unitybuddy.com/random-card-generator-with-unityc
+:: Timer
+https://blog.unitybuddy.com/how-to-make-a-timer-with-unityc-in-5-minutes
+>>>>>>> 7358d2d83fd856e534604605e0a0e97c862541ea
