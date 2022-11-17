@@ -8,10 +8,12 @@ using UnityEngine.SceneManagement;
 public class Introducao : MonoBehaviour
 {
     string[] textos = new string[3];
-    public GameObject narrativa;
+    public TMP_Text narrativa;
+
+    //[tentativa 1]
+    // GameObject[] imagens;
 
     
-    // Start is called before the first frame update
     void Start()
     {
         StartCoroutine(rotina());
@@ -19,27 +21,38 @@ public class Introducao : MonoBehaviour
         textos[1] = "... onde todos tinham vontade de estudar lá...";
         textos[2] = "... mas que por conta de um incidente, tudo mudou. Agora cabe a você mudar isso.";
 
-        narrativa = GameObject.Find("narrativa");
         narrativa.GetComponent<TMP_Text>().text = textos[0];
+
+        //tentativa 1
+        // imagens = GameObject.FindGameObjectsWithTag("Imagens");
     }
-    int cont = 0;
+
+        int cont = 0;
+
     public IEnumerator rotina(){
         
-        //habilitar image
-        GameObject img = GameObject.Find("Img"+cont);
-        img.GetComponent<RawImage>().enabled = true;
+        //habilitar imagem
+ 
+        //[tentativa 1]
+        // imagens[cont].SetActive(true);
+
+        //[tentativa 2]
+        // GameObject img = GameObject.Find("Img"+cont);
+        // img.GetComponent<RawImage>().enabled = true;
+ 
         
+
         narrativa.GetComponent<TMP_Text>().text = textos[cont];
         cont++;
 
         //trocar texto
         if(cont < 3){
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(3);
             StartCoroutine(rotina());
         }
         else{
+            yield return new WaitForSeconds(5);
             SceneManager.LoadScene("Menu");
-            // print("teste");
         }
     }
 

@@ -385,7 +385,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 102f8b71a81766623b48cfbb1051ffb3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  narrativa: {fileID: 984883859}
+  narrativa: {fileID: 984883861}
 --- !u!4 &680038474
 Transform:
   m_ObjectHideFlags: 0
